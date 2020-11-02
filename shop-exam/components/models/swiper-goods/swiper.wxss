@@ -1,0 +1,18 @@
+.box-basic {
+  margin: 12rpx 0;
+}
+.swiper-item {
+  /* background-color: tomato; */
+  width: 100%;
+  height: 400rpx;
+  border-radius: 5rpx;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: violet;
+}
+.green {
+  background-color: teal;
+}

@@ -1,0 +1,13 @@
+<view class="box-basic">
+  <swiper indicator-dots autoplay easing-function='easeInCubic' circular interval='{{5000}}'>
+    <swiper-item>
+      <view class='swiper-item red'></view>
+    </swiper-item>
+    <swiper-item>
+      <view class='swiper-item blue'></view>
+    </swiper-item>
+    <swiper-item>
+      <view class='swiper-item green'></view>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,0 +1,18 @@
+<view class="box-basic">
+	<scroll-view scroll-x style="width:100%">
+		<view style="width: {{list.length*260 + 80}}rpx; height: 180rpx">
+      <view class='menu-item' wx:for='{{list}}' wx:key='menuitem'>
+        <image class="item-image" src="{{item.url}}"></image>
+        <view>
+          <view class="item-first-title">驴掌门 （亮马桥的东面费事）</view>
+          <view class="item-first-title item-second-title">「驴肉火烧」 <text>品类：塑料袋率达到</text></view>
+        </view>
+      </view>
+      <view class="detail-more">
+         <view class="flex-center">
+           <view class="detail-more-text">查看更多</view>
+         </view>
+      </view>
+		</view>
+	</scroll-view>
+</view>

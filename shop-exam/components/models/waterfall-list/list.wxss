@@ -1,0 +1,78 @@
+
+.tabs {
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  height: 60rpx;
+  text-align: center;
+  border-bottom: 1px #eee solid;
+  background-color: #f5f5f5;
+  margin-top: 24rpx;
+  top: 50px;
+  z-index: 1;
+}
+.tab_item {
+  width: 100rpx;
+  font-size: 16px;
+}
+.tab_item view {
+
+  font-weight: bold;
+  font-size: 14px;
+}
+.tab_item .line {
+  background-color: rgb(248, 208, 28);
+  height: 2px;
+  margin: 18rpx 26rpx;
+}
+
+.item-box {
+  width: 100%;
+  margin: 24rpx 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+}
+.item-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.item-show {
+  vertical-align: top;
+  width: 330rpx;
+  background-color: white;
+  border-radius: 15rpx;
+  font-size: 14px;
+  overflow: hidden;
+  margin-right: 12rpx;
+  margin-top: 24rpx;
+  overflow: hidden;
+}
+
+.item-image {
+  width: 340rpx;
+  height: 280rpx;
+  background-color: rgb(175, 139, 139);
+}
+.mt12 {
+  margin-top: 12rpx;
+}
+.item-title {
+  font-weight: bold;
+}
+.item-descri {
+  font-size: 12px;
+  color: #A6A6A6;
+}
+.item-price {
+  color: #EF5D05;
+  font-weight: bold;
+}
+.remark-message {
+  margin: 24rpx 0 12rpx 0;
+  font-size: 13px;
+}

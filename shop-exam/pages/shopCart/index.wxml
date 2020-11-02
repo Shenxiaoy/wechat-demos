@@ -1,0 +1,49 @@
+<wxs module='m1'>
+  var getChecked = function (list, item) {
+    var isExist = false
+    list.forEach(function (k) {
+      if (k === item.skuCode) {
+        isExist = true
+      }
+    })
+    return isExist
+  }
+  module.exports.getChecked = getChecked
+</wxs>
+
+<view>
+  <view class="sp-header">
+    <view class="title">共7件宝贝</view>
+    <view class="title">管理</view>
+  </view>
+  <view class="good-list">
+    <view class="good-item" wx:for='{{goods}}' wx:key='sc'>
+      <view class="item-title">
+        <radio
+          class="item-radio"
+          data-item='{{item}}'
+          bindtap="handleShopCheck"
+          checked='{{m1.getChecked(goodsChecked, item)}}'
+        ></radio>
+        <text>类别：零食 <text class="color-ccc">></text></text>
+      </view>
+      <view class="item-good">
+        <image class="item-pic"></image>
+        <view class="item-desc">
+          <view>
+            <view class="text-over fontw desc-title">{{item.name}}</view>
+            <view class="desc-size">{{item.desc}}</view>
+          </view>
+          <view class="item-price"><text class='fz-10'>￥</text>{{item.price}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom-operation">
+    <view class="operation-box">
+       <radio class="title item-radio" checked="{{allChecked}}" bindtap="handleAllChecked">全选</radio>
+       <view class="title settlement">合计：<text class="price-style">￥567.5</text><text class="settlement-but">结算</text></view>
+    </view>
+  </view>
+  <view></view>
+</view>

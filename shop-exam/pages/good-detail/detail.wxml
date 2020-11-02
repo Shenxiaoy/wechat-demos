@@ -1,0 +1,12 @@
+<view>
+  <view class='banner-pics'>
+    <swiperGoods></swiperGoods>
+  </view>
+  <view class="detail-title">
+    <view>飞科至尊版剃须刀 <text class='rmb'>￥</text><text class="price-now">888</text></view>
+    <view class="detail-descrip">栈1用作入队，栈2用作出队，当栈2为空时，将栈1全部压栈到栈2，栈2在出栈(即出队列)</view>
+  </view>
+  <view>
+    <tabsList></tabsList>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "swiperGoods": "/components/models/swiper-goods/swiper",
+    "tabsList": "/components/models/tabsList/tabsList"
+  },
+  "navigationBarTitleText": ""
+}

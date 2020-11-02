@@ -1,0 +1,32 @@
+<view>
+  <view class='tabs' style="top:{{toph}}px">
+    <view class="tab_item" wx:for='{{tabs}}' wx:key='tabs'>
+      <view bindtap="tabsClick" id='{{item.id}}'>{{item.name}}</view>
+      <view class="{{tabId === item.id ? 'line' : ''}}"></view>
+    </view>
+  </view>
+  <view class="item-box">
+    <view class="item-column">
+        <view class="item-show" wx:for='{{leftList}}' wx:key='waterfall1'>
+          <image class="item-image" src="{{item.url}}"></image>
+          <view style='margin-left: 12rpx'>
+            <view class='item-title mt12'>{{item.title}}</view>
+            <view class='item-descri mt12'>{{item.descri}}</view>
+            <view class="item-price mt12"><text style='font-size: 10px'>￥</text><text>{{item.price}}</text></view>
+            <view class="remark-message mt12">{{item.remark}}</view>
+          </view>
+        </view>
+    </view> 
+    <view class="item-column">
+        <view class="item-show" wx:for='{{rightList}}' wx:key='waterfall2'>
+          <image class="item-image" src="{{item.url}}"></image>
+          <view style='margin-left: 12rpx'>
+            <view class='item-title mt12'>{{item.title}}</view>
+            <view class='item-descri mt12'>{{item.descri}}</view>
+            <view class="item-price mt12"><text style='font-size: 10px'>￥</text><text>{{item.price}}</text></view>
+            <view class="remark-message mt12">{{item.remark}}</view>
+          </view>
+        </view>
+    </view> 
+  </view>
+</view>

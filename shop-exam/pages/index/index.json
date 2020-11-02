@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "navList": "/components/models/nav/nav",
+    "singleItem": "/components/models/singleItem/singleItem",
+    "singleImage": "/components/models/single-image/single-image",
+    "tabsList": "/components/models/tabsList/tabsList",
+    "swiperGoods": "/components/models/swiper-goods/swiper",
+    "waterfall-list": "/components/models/waterfall-list/list"
+  },
+  "navigationStyle": "custom",
+  "backgroundColor": "#eeeeee"
+}

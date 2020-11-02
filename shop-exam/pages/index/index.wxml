@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container-index" style="margin-top:{{barStatusHeight + 44}}px">
+  <view class="header-content" style="padding-top:{{barStatusHeight}}px">逆魔船长的店</view>
+  <view class='header-nav'>
+    <view class="nav-block">
+      <view class="nav-search">
+        <icon style="margin-left: 10rpx;margin-top: 5rpx;" class="search_icon" type="search" size="18"></icon>
+      </view>
+      <navList></navList>
+    </view>
+  </view>
+  <view class="box-margin">
+      <singleItem></singleItem>
+      <waterfall-list isFirstPage='{{true}}'></waterfall-list>
+  </view>
+</view>

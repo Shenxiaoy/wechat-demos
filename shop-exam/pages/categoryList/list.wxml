@@ -1,0 +1,49 @@
+<view>
+  <view>
+    <view class='search'>
+      <text>{{menuSeletedId}}</text>
+      <icon class="search_icon" type="search" size="18"></icon>
+    </view>
+  </view>
+  <view>
+    <view class="menu-left">
+     <scroll-view scroll-y style="width: 100%; height: 94vh;">
+       <view class="menu-list-ul">
+         <view
+           class="menu-list-li" 
+           wx:for="{{menuList}}" 
+           wx:key='categorymenu' 
+           wx:for-item="item"
+           style='background: {{item.name === menuSeletedId ? "white" : "transparent"}}'
+         >
+           <view class="menu-li-text" bindtap="chooseCategory" data-item='{{item}}'  data-ghff='sdsfdfs'>{{item.name}}</view>
+         </view>
+       </view>
+     </scroll-view>
+    </view>
+    <view class="menu-content">
+        <scroll-view scroll-y>
+          <view class="second-category">
+            <view class="item">黄瓜</view>
+            <view class="item">菜花</view>
+            <view class="item">香菇</view>
+          </view>
+          <view class="goods-item" wx:for='{{itemList}}' wx:key='itemList'>
+            <view class="item-pic">
+              <image class="image" src="/components/imgs/down.png"></image>
+            </view>
+            <view class="item-text">
+              <view>
+                  <view class="good-title">好先生鲜花店</view>
+                  <view class="good-descri">报表管理 - 7 个报表增加导出功能（类似 商品导出）郭封彪 申晓宇 李斐然  已发测试</view>
+              </view>
+              <view class="price-distance">
+                <view><text style="font-size: 10px">￥</text><text style="color: red">108</text> <text class='before-price'>￥289</text></view>
+                <view style="font-size: 12px">4.0km</view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+    </view>
+  </view>
+</view>

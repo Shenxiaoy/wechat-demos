@@ -1,0 +1,10 @@
+<!-- 组件模板 -->
+<view class="wrapper">
+  <view class="content-box">
+    <view class="box" wx:for="{{navLists}}" wx:key="unique1">
+      <image class="nav-item" src="{{item.src}}"></image>
+      <view class="nav-text">{{item.label}}</view>
+    </view>
+  </view>
+  <slot></slot>
+</view>

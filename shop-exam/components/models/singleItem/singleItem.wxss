@@ -1,0 +1,52 @@
+/* components/models/singleItem/singleItem.wxss */
+.box-basic {
+  background: white;
+  padding: 24rpx;
+  padding-right: 0;
+}
+
+.menu-item {
+  display: inline-block;
+  font-size: 10px;
+  margin-right: 20rpx;
+}
+.item-image {
+  width: 240rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+}
+.item-first-title {
+  width: 240rpx;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+.item-second-title {
+  color: #776C50;
+}
+.detail-more {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  margin-left: 44rpx;
+}
+.detail-more-text {
+  display: inline-block;
+  font-size: 10px;
+  writing-mode: tb;
+  padding: 15rpx 5rpx;
+  background-color: #f3f3f3;
+  color: #888;
+  letter-spacing: 5rpx;
+}
+.flex-center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

@@ -1,0 +1,34 @@
+<view class="box">
+  <view class="header-info">
+   <view><image class="header-image" src="/components/imgs/down.png"></image></view>
+   <view bindtap="openMap" class="header-desc">
+     <view>
+       <view class="fontw">是多少的崂山道士的</view>
+       <view style='margin-top: 10rpx;'>
+         <text>123858574</text>
+         <view class="info-revise">
+           <image class="font-whrite" src="/components/imgs/revise_1.svg"></image>
+           <text>修改</text>
+         </view>
+      </view>
+     </view>
+   </view>
+  </view>
+  <view class="content-list">
+    <view class="activity"></view>
+    <view class="info-list">
+      <view class="list-item">
+        <image class="list-item-icon" src=""></image>
+        <text>我的地址</text>
+        <text>ssss</text>
+        <view>445555</view>
+      </view>
+      <view class="list-item">
+        <image class="list-item-icon"></image>
+        <text>我的地址</text>
+        <text>ssss</text>
+        <view>445555</view>
+      </view>
+    </view>
+  </view>
+</view>
